@@ -28,6 +28,7 @@
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "react/jsx-one-expression-per-line": "off",
+        "@typescript-eslint/camelcase": "off",
         "react/jsx-filename-extension": [
             1,
             {
