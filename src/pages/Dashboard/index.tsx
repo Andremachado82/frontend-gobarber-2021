@@ -11,11 +11,14 @@ import {
   Schedule,
   NextAppointment,
   Calendar,
+  Section,
+  Appointment,
 } from './styles';
 
 import logoImg from '../../assets/thaisLogo.svg';
 
 const Dashboard: React.FC = () => {
+  // const [selectedDate, setSelectedDate] = useState(new Date());
   const { singOut, user } = useAuth();
 
   return (
@@ -50,7 +53,7 @@ const Dashboard: React.FC = () => {
             <strong>Atendimento a seguir</strong>
             <div>
               <img
-                src="https://lh3.googleusercontent.com/ogw/ADGmqu9Te4hCrFxR4Xrvyh8huS5628XGEuTHHOEycGxW=s83-c-mo  "
+                src="https://lh3.googleusercontent.com/ogw/ADGmqu9Te4hCrFxR4Xrvyh8huS5628XGEuTHHOEycGxW=s83-c-mo"
                 alt="Nome do usuário"
               />
 
@@ -61,6 +64,61 @@ const Dashboard: React.FC = () => {
               </span>
             </div>
           </NextAppointment>
+          <Section>
+            <strong>Manhã</strong>
+
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="https://lh3.googleusercontent.com/ogw/ADGmqu9Te4hCrFxR4Xrvyh8huS5628XGEuTHHOEycGxW=s83-c-mo"
+                  alt="Nome do usuário"
+                />
+
+                <strong>Nome do usuário</strong>
+              </div>
+            </Appointment>
+
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="https://lh3.googleusercontent.com/ogw/ADGmqu9Te4hCrFxR4Xrvyh8huS5628XGEuTHHOEycGxW=s83-c-mo"
+                  alt="Nome do usuário"
+                />
+
+                <strong>Nome do usuário</strong>
+              </div>
+            </Appointment>
+          </Section>
+
+          <Section>
+            <strong>Tarde</strong>
+
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="https://lh3.googleusercontent.com/ogw/ADGmqu9Te4hCrFxR4Xrvyh8huS5628XGEuTHHOEycGxW=s83-c-mo"
+                  alt="Nome do usuário"
+                />
+
+                <strong>Nome do usuário</strong>
+              </div>
+            </Appointment>
+          </Section>
         </Schedule>
 
         <Calendar />
